@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-def wsgi_application(environ, start_response):
+def app(environ, start_response):
     body = ''
 
     for line in environ['QUERY_STRING'].split('&'):
